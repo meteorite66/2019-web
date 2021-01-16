@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO;EAEd,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;CAapB;;AAnBD,AAQI,IARA,CAQA,MAAM,CAAC;EACH,OAAO,EAAE,QAAQ;EACjB,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,OAAO;EAEd,YAAY,EAAE,IAAI;CACrB;;AAdL,AAgBI,IAhBA,CAgBA,KAAK,CAAC;EACF,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "assessment.scss"
+    ],
+    "names": [],
+    "file": "assessment.css"
+}

@@ -1,0 +1,17 @@
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  background-color: lightblue;
+  color: #555;
+}
+
+body h1, body h3 {
+  color: #222;
+}
+
+div {
+  background-color: lightcoral;
+}
+/*# sourceMappingURL=04-profile.css.map */

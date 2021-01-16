@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACF,WAAW,EAAE,0BAA0B;CACxC;;AAED,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,SAAS;EAC3B,KAAK,EAAE,IAAI;CAQd;;AAVD,AAKI,IALA,CAKA,EAAE,EALN,IAAI,CAKG,EAAE,CAAA;EACD,KAAK,EAAE,IAAI;CAEd;;AAIL,AAAA,GAAG,CAAA;EACC,gBAAgB,EAAE,UAAU;CAC/B",
+    "sources": [
+        "04-profile.scss"
+    ],
+    "names": [],
+    "file": "04-profile.css"
+}
