@@ -1,0 +1,61 @@
+Statistical profiling result from isolate-0x39221e0-16308-v8.log, (3835 ticks, 218 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     22    0.6%          /usr/local/bin/node
+      2    0.1%          /lib/x86_64-linux-gnu/libc-2.27.so
+      1    0.0%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   3516   91.7%   92.3%  LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+
+ [C++]:
+   ticks  total  nonlib   name
+     37    1.0%    1.0%  node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     23    0.6%    0.6%  __write
+      6    0.2%    0.2%  __lll_unlock_wake
+      2    0.1%    0.1%  node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)0>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    0.0%    0.0%  v8::internal::Scope::AllocateVariablesRecursively()
+      1    0.0%    0.0%  v8::internal::AstRawString::FirstCharacter() const
+      1    0.0%    0.0%  std::string::append(char const*, unsigned long)
+      1    0.0%    0.0%  node::options_parser::GetOptions(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  do_futex_wait.constprop.1
+      1    0.0%    0.0%  __munmap
+      1    0.0%    0.0%  _IO_fwrite
+
+ [Summary]:
+   ticks  total  nonlib   name
+   3516   91.7%   92.3%  JavaScript
+     76    2.0%    2.0%  C++
+      1    0.0%    0.0%  GC
+     25    0.7%          Shared libraries
+    218    5.7%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     39   73.6%    1.0%  v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*)
+      5    9.4%    0.1%  node::inspector::(anonymous namespace)::InspectorConsoleCall(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    7.5%    0.1%  __write
+      1    1.9%    0.0%  v8::internal::Variable* v8::internal::Scope::Lookup<(v8::internal::Scope::ScopeLookupMode)0>(v8::internal::VariableProxy*, v8::internal::Scope*, v8::internal::Scope*, v8::internal::Scope*, bool)
+      1    1.9%    0.0%  v8::internal::Scope::AllocateVariablesRecursively()
+      1    1.9%    0.0%  v8::internal::AstRawString::FirstCharacter() const
+      1    1.9%    0.0%  node::url::(anonymous namespace)::Parse(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.9%    0.0%  node::options_parser::GetOptions(v8::FunctionCallbackInfo<v8::Value> const&)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3516   91.7%  LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+   3516  100.0%    LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+   3516  100.0%      LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+   3516  100.0%        LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+   3516  100.0%          LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+   3516  100.0%            LazyCompile: *fib /home/takumi/Develop/Nyobi/2019web/Chapter3/01-node/02.js:4:13
+
+    218    5.7%  UNKNOWN
+
